@@ -31,3 +31,9 @@ const pessoaMaisVelha = pessoas.reduce(function(acumulador, obj){
     return obj;
 });
 console.log(pessoaMaisVelha);
+
+const somaNumerosParesDobrados = numeros
+    .filter(valor => valor % 2 === 0)
+    .map(valor => valor * 2)
+    .reduce((acumulador, obj) => acumulador + obj, 0);
+console.log(somaNumerosParesDobrados);
